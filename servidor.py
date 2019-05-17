@@ -79,10 +79,13 @@ try:
                     elif variables[2] == "F" or variables[2] == "f":
                         resultado = float(variables[0])*9/5 + 32
                         resultado3 = "Fahrenheit"
+                    elif variables[2] == "C" or variables[2] == "c":
+                        resultado = float(variables[0])
+                        resultado3 = "Celsius"
                     else:
                         if error == True:
                             resultado = "Ha ingresado el valor de forma incorrecta, pruebe de la forma 10 o 100.0"
-                        elif variables[2] != "K" and variables[2] != "k" and variables[2] != "F" and variables[2] != "f":
+                        elif variables[2] != "K" and variables[2] != "k" and variables[2] != "F" and variables[2] != "f" and variables[2] != "C" and variables[2] != "c":
                             resultado3 = "Ha ingresado el tipo de temperatura de forma incorrecta, pruebe K o F"
                 #Para cuando se quiere transformar desde grados Kelvin
                 elif variables[1] == "K" or variables[1] == "k":
@@ -92,10 +95,13 @@ try:
                     if variables[2] == "F" or variables[2] == "f":
                         resultado = (float(variables[0])-273.15) * 9/5 + 32
                         resultado3 = "Fahrenheit"
+                    if variables[2] == "K" or variables[2] == "k":
+                        resultado = float(variables[0])
+                        resultado3 = "Kelvin"
                     else:
                         if error == True:
                             resultado = "Ha ingresado el valor de forma incorrecta, pruebe de la forma 10 o 100.0"
-                        elif variables[2] != "C" and variables[2] != "c" and variables[2] != "F" and variables[2] != "f":
+                        elif variables[2] != "C" and variables[2] != "c" and variables[2] != "F" and variables[2] != "f" and variables[2] != "K" and variables[2] != "k":
                             resultado3 = "Ha ingresado el tipo de temperatura de forma incorrecta, pruebe C o F"
                 #Para cuando se quiere transformar desde grados Fahrenheit
                 elif variables[1] == "F" or variables[1] == "f":
@@ -105,10 +111,13 @@ try:
                     if variables[2] == "K" or variables[2] == "k":
                         resultado = (float(variables[0]) - 32)* 5/9 + 273.15
                         resultado3 = "Kelvin"
+                    if variables[2] == "F" or variables[2] == "f":
+                        resultado = float(variables[0])
+                        resultado3 = "Fahrenheit"
                     else:
                         if error == True:
                             resultado = "Ha ingresado el valor de forma incorrecta, pruebe de la forma 10 o 100.0"
-                        elif variables[2] != "K" and variables[2] != "k" and variables[2] != "C" and variables[2] != "c":
+                        elif variables[2] != "K" and variables[2] != "k" and variables[2] != "C" and variables[2] != "c" and variables[2] != "F" and variables[2] != "f":
                             resultado3 = "Ha ingresado el tipo de temperatura de forma incorrecta, pruebe K o C"
                 elif variables[1] != "C" and variables[1] != "c" and variables[1] != "K" and variables[1] != "k" and variables[1] != "F" and variables[1] != "f":
                     resultado2 = "Debe ingresar finalizar() o por ejemplo 180.0 C K"
