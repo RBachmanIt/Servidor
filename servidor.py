@@ -9,7 +9,7 @@ if len(sys.argv) != 2:
     print ("Agregar el puerto donde se va a ofrecer el servicio.")
     sys.exit(0)
 
-IP = "localhost"
+IP = ""
 PUERTO = int(sys.argv[1])
 
 print ("\nServicio se va a configurar en el puerto: ", PUERTO, " ...")
