@@ -1,0 +1,32 @@
+Desde la consola debe dirigirse al directorio donde se encuentran lo archivos (servidor.py y cliente.py)
+Estos archivos estan echos mediante python 2 (se tomo la base entregada por el profesor)
+
+-Para servidor.py:
+
+Se debe ejecutar el codigo con el metodo de python, seguido de el puerto en el que se trabajara
+Ejemplo: -python servidor.py "puerto"
+	 -python servidor.py 9090
+
+Aqui el servidor procedera a esperar la conexion de algun cliente.
+
+-Para cliente.py:
+
+se debe ejecutar el codigo con el metodo de python, seguido de la IP y el puerto con el que se trabara
+Ejemplo: -python cliente.py "IP" "puerto"
+	 -Python cliente.py 192.168.122.104 9090
+
+Una vez conectado el cliente al servidor se podran ver unas instrucciones de uso.
+Se pueden convertir valores en diferentes sistemas de medicion de temperatura
+Los cuales son : -Kelvin
+		 -Celsius
+		 -Fahrenheit
+
+Se debe ingresar el valor a convertir, en caso de que el valor use decimales estos deben ir seguidos despues
+de un punto, despues de esto deben ir los sistemas de medicion primero el sistema original y despues al cual se quiere
+convertir, destacar que solo deben usarse las iniciales de estos sistemas
+Ejemplo: - 192 c k
+
+En el ejemplo anterior estamos convirtiendo 192 grados de Celsius a Kelvin
+La respuesta del servidor seria: 465.15 Kelvin
+En caso de que el sistema original y final sean el mismo el valor devuelto no se vera afectado pues no se realiza ninguna
+conversion.
